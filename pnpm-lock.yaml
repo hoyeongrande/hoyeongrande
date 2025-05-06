@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  hoyeongrande:
+    specifier: 'link:'
+    version: 'link:'
   react:
     specifier: ^19.1.0
     version: 19.1.0
@@ -34,6 +37,9 @@ devDependencies:
   eslint-plugin-react-refresh:
     specifier: ^0.4.19
     version: 0.4.20(eslint@9.26.0)
+  gh-pages:
+    specifier: ^6.3.0
+    version: 6.3.0
   globals:
     specifier: ^16.0.0
     version: 16.0.0
@@ -46,9 +52,6 @@ devDependencies:
   vite:
     specifier: ^6.3.5
     version: 6.3.5
-  vite-plugin-gh-pages:
-    specifier: ^1.0.1
-    version: 1.0.1
 
 packages:
 
@@ -2487,12 +2490,6 @@ packages:
   /vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
-    dev: true
-
-  /vite-plugin-gh-pages@1.0.1:
-    resolution: {integrity: sha512-BL83oPZINfCr/XcKXDAPtZR/zRKH4JyAdg5fHadOz2DxLnNYhHDKfWNdelHy+b4EYd/IGw7D85+p7lUuZJIVCg==}
-    dependencies:
-      gh-pages: 6.3.0
     dev: true
 
   /vite@6.3.5:
