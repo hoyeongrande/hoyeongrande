@@ -36,8 +36,8 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         run: |
           pnpm exec gh-pages -d dist \
             -u "hoyeongrande <hooy21c@naver.com>" \
-            --repo="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+            --repo="https://x-access-token:${ACCESS_TOKEN}@github.com/${{ github.repository }}.git"
